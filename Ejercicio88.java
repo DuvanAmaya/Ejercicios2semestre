@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class Ejercicio88 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Ingrese el primer voltaje: ");
+        double voltaje1 = scanner.nextDouble();
+
+        System.out.print("Ingrese el segundo voltaje: ");
+        double voltaje2 = scanner.nextDouble();
+
+        System.out.print("Ingrese el tercer voltaje: ");
+        double voltaje3 = scanner.nextDouble();
+
+        double promedio = (voltaje1 + voltaje2 + voltaje3) / 3;
+
+        System.out.println("El promedio de los voltajes es: " + promedio);
+
+        if (promedio < 115) {
+            System.out.println("VOLTAJE CORRECTO");
+        } else if (promedio >= 115 && promedio < 220) {
+            System.out.println("ALTO VOLTAJE");
+        } else {
+            System.out.println("PELIGRO");
+        }
+    }
+}
